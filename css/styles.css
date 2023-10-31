@@ -1,5 +1,5 @@
 body {
-    /* */
+    display: flex;
     font-family: Arial, sans-serif;
     margin: 0;
     min-width: 1025px;
@@ -7,6 +7,7 @@ body {
 }
 
 header {
+    flex-grow: 3;
     background-color: #333;
     color: #fff;
     min-width: 13em;
@@ -15,7 +16,7 @@ header {
 }
 
 main {
-    /* */
+    flex-grow: 1;
     padding: 0 2em 20em 2em;
     text-align: left;
 }
@@ -97,9 +98,12 @@ ul ul a:hover {
 }
 
 #summary {
-    /* */
+    display: flex;
+    flex-direction: column;
 }
 
 #summary > div {
-    /* */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
